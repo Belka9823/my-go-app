@@ -43,6 +43,9 @@ Windows/PowerShell (надо проверять)
 ```shell
 docker run --rm -v "${PWD}:/app" -w /app golang:1.22-alpine go mod init my-go-app
 ```
+
+
+
 Любой Unix
 ```shell
 docker run --rm -v "$(pwd):/app" -w /app golang:1.22-alpine go mod init my-go-app
@@ -54,6 +57,9 @@ Windows/PowerShell (надо проверять)
 ```shell
 docker run --rm -v "${PWD}:/app" -w /app golang:1.22-alpine go mod tidy
 ```
+
+
+
 Любой Unix
 ```shell
 docker run --rm -v "$(pwd):/app" -w /app golang:1.22-alpine go mod tidy
@@ -181,6 +187,9 @@ Windows/PowerShell (надо проверять)
 ```shell
 docker run --rm -v "${PWD}:/app" -w /app golang:1.22-alpine go test ./...
 ```
+
+<img width="843" height="55" alt="изображение" src="https://github.com/user-attachments/assets/eb226434-b5e9-4cba-bb7d-f24cdd9cb993" />
+
 Любой Unix
 ```shell
 docker run --rm -v "$(pwd):/app" -w /app golang:1.22-alpine go test ./...
@@ -207,6 +216,9 @@ Windows/PowerShell (надо проверять)
 ```shell
 docker run --rm -v "${PWD}:/app" -w /app alpine ./my-app
 ```
+
+<img width="1155" height="107" alt="изображение" src="https://github.com/user-attachments/assets/e4a7d450-40d0-4d79-ae21-a060b15d113e" />
+
 Любой Unix
 ```shell
 docker run --rm -v "$(pwd):/app" -w /app alpine ./my-app
